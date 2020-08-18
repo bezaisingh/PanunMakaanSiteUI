@@ -1,0 +1,16 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { ListPropertyComponent } from './list-property.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ListPropertyComponent
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class ListPropertyRoutingModule { }
