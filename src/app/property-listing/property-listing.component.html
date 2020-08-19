@@ -1,57 +1,236 @@
-<div class="w-100 propert-listing-wrapper">
+<div class="w-100 mt-5">
     <div class="container">
-        <div class="list-item mt-5">
-            <div class="row no-gutters">
-                <div class="col-lg-4">
-                    <div class="row no-gutters">
-                        <div class="col-sm-6">
-                            <img src="https://img.staticmb.com/mbphoto/property/cropped_images/2020/Feb/17/Photo_h180_w240/48110647_16_PropertyImage892-7642607584661_180_240.jpg" alt="" class="w-100">
-                        </div>
-                        <div class="col-sm-6 pl-sm-3">
-                            <div class="pprice"><strong>&#8377; 2.60 Cr</strong></div>
-                            <div class="fz12"><span class="fw5">&#8377; 40256</span> per sqft</div>
+        <div class="row justify-content-end">
+            <div class="col-lg-4 filter-column">
+                <div class="pr-5">
+                    <div class="filter-wrapper">
+                        <h3>Filter</h3>
+
+                        <div class="w-100">
+                            <div class="filter-panel">
+                                <span class="fz14">Price Range:</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="d-flex fz14">
-                        <div class="mr-md-3"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit</div>
-                        <a href="javascript:voi(0)" class="text-reset"><i class="fas fa-map-marker-alt"></i> What's near by</a>
-                    </div>
-                    <div class="states">
-                        <div class="d-flex flex-wrap flex-row align-items-stretch states-container">
-                            <div class="statecol">
-                                <span class="text-uppercase">plot area</span>
-                                <div>50 sqyrd</div>
-                            </div>
-                            <div class="statecol">
-                                <span class="text-uppercase">dimensions</span>
-                                <div>30 X 15 yrd Sqyrd</div>
-                            </div>
-                            <div class="statecol">
-                                <span class="text-uppercase">ownership</span>
-                                <div>Freehold</div>
-                            </div>
-                            <div class="statecol">
-                                <span class="text-uppercase">transction</span>
-                                <div>New Property</div>
-                            </div>
-                            <div class="statecol">
-                                <span class="text-uppercase">floors allowed for construction</span>
-                                <div>4</div>
-                            </div>
-                            <div class="statecol">
-                                <span class="text-uppercase">no of open sides</span>
-                                <div>2</div>
-                            </div>
-                            <div class="statecol">
-                                <span class="text-uppercase">width of road facing the plot</span>
-                                <div>6m</div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="list-wrapper">
+                    <div *ngFor="let node of list" class="item-card">
+                        <div class="item-header">
+                            <a href="javascript:void(0)" class="item-title">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                                <i class="fa fa-external-link-alt fz14"></i>
+                            </a>
+                            <div class="header-desc">
+                                <a href="javascript:void(0)" class="project-link">Lorem ipsum dolor</a>
+                                <span class="mx2px"></span>
+                                <span>Lorem ipsum dolor sit amet</span>
+                                <span class="mx2px"></span>
+                                <span>
+                                    <i class="fa fa-map-marker-alt fz12"></i>
+                                    <span class="mx2px"></span>
+                                    <a href="javascript:void(0)" class="fw5 neayby-link">Explore Nearby</a>
+                                </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="description">
-                        High-on-demand, this premium residential plot is up for sale in the prime locality of Chuna Mandi. Well-positioned near the MCD Community Hall, this property enjoys close proximity to Ramakrishna Ashram Marg Metro Station (500m), New Delhi Metro Station (900m), and New Delhi Railway Station (900m) which makes it an elite and exclusive property to own. Property specification:Spanning across a huge area of 60 sqm area, this south-facing is surrounded by boundary walls to prevent the entrance of intruders. A 25m wide internal road connects this residential plot to the main road which lies hardly 25m away. Further, this closeness greatly attributes to the overall value of this plot. Also, several residential as well as commercial constructions are available close by that gives assurance of a secured neighborhood. Further, approved under the respected developmental authority, this plot is benefited with freehold property rights as well as holds a permit to build around 5-floors on it. It will be an outstanding opportunity for the prospective owner. FacilitiesBeing located in one of the prime and well-developed localities of the city, this plot is facilitated by adequate water <a href="javascript:void(0)">{{'read less'}}</a>
+                        <div class="item-overview">
+                            <div class="row item-overview-row align-items-center">
+                                <div class="col-1 overview">
+                                    <div class="status-overview">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="status-overview">
+                                        <i class="fa fa-rupee-sign"></i>
+                                    </div>
+                                </div>
+                                <div class="col-3 overview">
+                                    <h3>971 sqft</h3>
+                                    <h5>Builtup</h5>
+                                </div>
+                                <div class="col-4 overview">
+                                    <h3><i class="fa fa-rupee-sign"></i> 1.33 Lacs/Month</h3>
+                                    <h5>Estimated EMI</h5>
+                                </div>
+                                <div class="col-4 overview">
+                                    <h3><i class="fa fa-rupee-sign"></i> 1.6 Crores</h3>
+                                    <h5><i class="fa fa-rupee-sign"></i> 19,576 per sq. ft.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-details">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <img src="https://cdn.pixabay.com/photo/2017/07/17/00/54/house-2511060__340.jpg" alt="" class="w-100">
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="outer-table fz14 mb-3">
+                                        <div class="fcol fcol1">
+                                            <div class="fw5">4</div>
+                                            <div>Bedrooms</div>
+                                            <div class="ficon">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M472,272h-8v-24c-0.021-15.886-9.44-30.254-24-36.608V88c-0.002-3.18-1.886-6.056-4.8-7.328
+			c3.121-5.002,4.783-10.776,4.8-16.672c0-17.673-14.327-32-32-32c-17.673,0-32,14.327-32,32c0.033,5.634,1.569,11.157,4.448,16
+			H99.552c2.879-4.843,4.415-10.366,4.448-16c0-17.673-14.327-32-32-32S40,46.327,40,64c0.017,5.896,1.679,11.67,4.8,16.672
+			C41.886,81.944,40.002,84.82,40,88v123.392C25.44,217.746,16.021,232.114,16,248v24H8c-4.418,0-8,3.582-8,8v112
+			c0,4.418,3.582,8,8,8h8v40c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8v-40h352v40c0,4.418,3.582,8,8,8h32c4.418,0,8-3.582,8-8
+			v-40h8c4.418,0,8-3.582,8-8V280C480,275.582,476.418,272,472,272z M408,48c8.837,0,16,7.163,16,16s-7.163,16-16,16
+			s-16-7.163-16-16S399.163,48,408,48z M72,48c8.837,0,16,7.163,16,16s-7.163,16-16,16s-16-7.163-16-16S63.163,48,72,48z M56,96h368
+			v112h-32.208c5.294-6.883,8.179-15.316,8.208-24v-16c-0.026-22.08-17.92-39.974-40-40h-64c-22.08,0.026-39.974,17.92-40,40v16
+			c0.029,8.684,2.914,17.117,8.208,24h-48.416c5.294-6.883,8.179-15.316,8.208-24v-16c-0.026-22.08-17.92-39.974-40-40h-64
+			c-22.08,0.026-39.974,17.92-40,40v16c0.029,8.684,2.914,17.117,8.208,24H56V96z M384,168v16c0,13.255-10.745,24-24,24h-64
+			c-13.255,0-24-10.745-24-24v-16c0-13.255,10.745-24,24-24h64C373.255,144,384,154.745,384,168z M208,168v16
+			c0,13.255-10.745,24-24,24h-64c-13.255,0-24-10.745-24-24v-16c0-13.255,10.745-24,24-24h64C197.255,144,208,154.745,208,168z
+			 M32,248c0-13.255,10.745-24,24-24h368c13.255,0,24,10.745,24,24v24H32V248z M48,432H32v-32h16V432z M448,432h-16v-32h16V432z
+			 M464,384H16v-96h448V384z" />
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <path
+                                                                d="M72,352H40c-4.418,0-8,3.582-8,8s3.582,8,8,8h32c4.418,0,8-3.582,8-8S76.418,352,72,352z" />
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <path
+                                                                d="M440,352H104c-4.418,0-8,3.582-8,8s3.582,8,8,8h336c4.418,0,8-3.582,8-8S444.418,352,440,352z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="fcol fcol2">
+                                            <div class="fw5">1-3 Years</div>
+                                            <div>Property Age</div>
+                                            <div class="ficon">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M463.8,238.23V47.134c0-8.284-6.716-15-15-15h-73.367V15c0-8.284-6.716-15-15-15s-15,6.716-15,15v17.134H246.9V15
+                c0-8.284-6.716-15-15-15s-15,6.716-15,15v17.134h-98.533V15c0-8.284-6.716-15-15-15s-15,6.716-15,15v17.134H15
+                c-8.284,0-15,6.716-15,15v401.667c0,8.284,6.716,15,15,15h223.23C267.233,493.517,307.695,512,352.399,512
+                C440.403,512,512,440.404,512,352.4C512,307.695,493.517,267.233,463.8,238.23z M30,62.134h403.8v66.4H30V62.134z M30,433.8
+                V158.534h403.8v56.638c-23.849-14.2-51.686-22.372-81.4-22.372c-88.003,0-159.6,71.596-159.6,159.6
+                c0,29.714,8.172,57.552,22.372,81.4H30z M352.399,482c-71.461,0-129.6-58.138-129.6-129.6s58.138-129.6,129.6-129.6
+                S482,280.939,482,352.4C482,423.862,423.861,482,352.399,482z" />
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <g>
+                                                            <path d="M400.6,337.4h-33.2v-33.2c0-8.284-6.716-15-15-15s-15,6.716-15,15v48.2c0,8.284,6.716,15,15,15h48.2
+                c8.284,0,15-6.716,15-15S408.884,337.4,400.6,337.4z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="fcol fcol3">
+                                            <div class="fw5">2</div>
+                                            <div>Bathrooms</div>
+                                            <div class="ficon">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M511.993,255.639H50.022V82.556c0-28.979,23.577-52.555,52.556-52.555c26.838,0,49.026,20.224,52.161,46.23
+                c-31.24,7.036-54.651,34.987-54.651,68.321v20.004h140.091v-20.004c0-33.574-23.748-61.692-55.323-68.476
+                C181.536,33.575,145.916,0,102.578,0C57.056,0,20.021,37.034,20.021,82.556v173.083H0.005v90.05h20.016v41.259
+                c0,47.682,35.043,87.329,80.727,94.549V512h30.001v-29.325h250.5V512h30.001v-30.503c45.684-7.22,80.727-46.867,80.727-94.549
+                v-41.259h20.017v-90.05H511.993z M170.132,104.506c18.63,0,34.331,12.788,38.783,30.049h-77.565
+                C135.802,117.295,151.502,104.506,170.132,104.506z M461.976,386.948h-0.001c0,36.242-29.485,65.727-65.727,65.727h-280.5
+                c-36.242,0-65.727-29.485-65.727-65.727v-41.259h411.954V386.948z M481.993,315.688L481.993,315.688H30.006V285.64h451.987
+                V315.688z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="fcol fcol4">
+                                            <div class="fw5">Bike and Car</div>
+                                            <div>Parking</div>
+                                            <div class="ficon">
+                                                <svg id="Capa_1" enable-background="new 0 0 394.47 394.47" height="512"
+                                                    viewBox="0 0 394.47 394.47" width="512"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="m352.206 0h-309.941c-23.306 0-42.265 18.959-42.265 42.265v309.941c0 23.306 18.959 42.265 42.265 42.265h309.941c23.306 0 42.265-18.959 42.265-42.265v-309.941c-.001-23.306-18.959-42.265-42.265-42.265zm14.088 352.206c0 7.773-6.315 14.088-14.088 14.088h-309.941c-7.773 0-14.088-6.315-14.088-14.088v-309.941c0-7.773 6.315-14.088 14.088-14.088h309.941c7.773 0 14.088 6.315 14.088 14.088z" />
+                                                    <path
+                                                        d="m211.323 84.529h-84.529c-7.787 0-14.088 6.301-14.088 14.088v211.323h28.176v-84.529h70.441c38.839 0 70.441-31.602 70.441-70.441s-31.602-70.441-70.441-70.441zm0 112.706h-70.441v-84.529h70.441c23.306 0 42.265 18.959 42.265 42.265s-18.958 42.264-42.265 42.264z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button class="btn btn-primary fz14 btn-block">Get Seller Details</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-outline-primary action_btn">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 485 485" style="enable-background:new 0 0 485 485;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <path d="M343.611,22.543c-22.613,0-44.227,5.184-64.238,15.409c-13.622,6.959-26.136,16.205-36.873,27.175
+            c-10.738-10.97-23.251-20.216-36.873-27.175c-20.012-10.225-41.625-15.409-64.239-15.409C63.427,22.543,0,85.97,0,163.932
+            c0,55.219,29.163,113.866,86.678,174.314c48.022,50.471,106.816,92.543,147.681,118.95l8.141,5.261l8.141-5.261
+            c40.865-26.406,99.659-68.479,147.682-118.95C455.838,277.798,485,219.151,485,163.932C485,85.97,421.573,22.543,343.611,22.543z
+            M376.589,317.566c-42.918,45.106-95.196,83.452-134.089,109.116c-38.893-25.665-91.171-64.01-134.088-109.116
+            C56.381,262.884,30,211.194,30,163.932c0-61.42,49.969-111.389,111.389-111.389c35.361,0,67.844,16.243,89.118,44.563
+            l11.993,15.965l11.993-15.965c21.274-28.32,53.757-44.563,89.118-44.563c61.42,0,111.389,49.969,111.389,111.389
+            C455,211.194,428.618,262.884,376.589,317.566z" />
+                                                    </g>
+                                                </svg>
+
+                                            </button>
+                                            <button class="btn btn-outline-primary action_btn">
+                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                    xml:space="preserve">
+                                                    <g>
+                                                        <g>
+                                                            <path d="M424.385,20.69C401.182,6.768,376.445,0,348.761,0c-33.122,0-65.635,9.753-97.077,19.185
+                c-30.716,9.214-59.729,17.917-88.446,17.919c-0.004,0-0.007,0-0.011,0c-19.199,0-36.583-4.064-52.894-12.382V15
+                c0-8.284-6.716-15-15-15s-15,6.716-15,15v18.551v203.896V497c0,8.284,6.716,15,15,15s15-6.716,15-15V261.453
+                c16.567,6.4,34.052,9.547,52.906,9.547c33.121,0,65.631-9.753,97.071-19.185c30.718-9.215,59.733-17.919,88.451-17.919
+                c22.092,0,41.779,5.369,60.188,16.415c4.633,2.78,10.404,2.854,15.108,0.191c4.703-2.663,7.609-7.649,7.609-13.053V33.552
+                C431.667,28.283,428.903,23.4,424.385,20.69z M251.691,223.081C220.972,232.296,191.957,241,163.24,241
+                c-19.206,0-36.594-4.058-52.906-12.376V57.566c16.564,6.399,34.046,9.539,52.894,9.538c0.003,0,0.01,0,0.014,0
+                c33.118-0.002,65.626-9.754,97.063-19.185C291.024,38.704,320.042,30,348.761,30c19.206,0,36.594,4.058,52.905,12.375v171.06
+                c-16.566-6.4-34.052-9.539-52.905-9.539C315.641,203.896,283.13,213.649,251.691,223.081z" />
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-footer fz12 d-flex align-items-center">
+                            <span>Nearby:</span>
+                            <div class="ml-1 chip-row">
+                                <a href="javascript:void(0)">McDonald's</a>
+                                <a href="javascript:void(0)">Gild Cinemas</a>
+                                <a href="javascript:void(0)">Easy Day</a>
+                                <a href="javascript:void(0)">Gym</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

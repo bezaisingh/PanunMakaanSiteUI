@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyListingComponent implements OnInit {
 
+  list = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    for (let i = 1; i <= 5; i++) {
+      this.list.push(i);
+    }
   }
 
 }

@@ -17,15 +17,20 @@ body {
 }
 
 .fz12 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .fz14 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .fw5 {
   font-weight: 500;
+}
+
+.mx2px {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .form-control:focus {
