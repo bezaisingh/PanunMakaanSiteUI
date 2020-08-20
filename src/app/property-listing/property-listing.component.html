@@ -4,11 +4,41 @@
             <div class="col-lg-4 filter-column">
                 <div class="pr-5">
                     <div class="filter-wrapper">
-                        <h3>Filter</h3>
+                        <div class="px-3">
+                            <h3 class="mb-0">Filters</h3>
+                        </div>
 
-                        <div class="w-100">
+                        <div class="w-100 filter-content">
+                            <div class="filter-panel mb-3">
+                                <span class="filter-title">Property Status:</span>
+                                <div class="fz14 mt-2">
+                                    <app-checkbox label="Under Construction"></app-checkbox>
+                                    <app-checkbox label="Ready to move"></app-checkbox>
+                                </div>
+                            </div>
+                            <div class="filter-panel mb-3">
+                                <span class="filter-title">Price Range:</span>
+                                <div>
+                                    <ng5-slider [(value)]="priceRange.minValue" [(highValue)]="priceRange.maxValue" [options]="options"></ng5-slider>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col d-flex align-items-center">
+                                        <span class="rupee-sign">₹</span>
+                                        <input name="minValue" [(ngModel)]="priceRange.minValue" type="number" class="range-input">
+                                    </div>
+                                    <div class="col d-flex align-items-center">
+                                        <span class="rupee-sign">₹</span>
+                                        <input name="maxValue" [(ngModel)]="priceRange.maxValue" type="number" class="range-input">
+                                    </div>
+                                </div>
+                            </div>
                             <div class="filter-panel">
-                                <span class="fz14">Price Range:</span>
+                                <span class="filter-title">Bathrooms:</span>
+                                <div class="fz14 mt-2">
+                                    <app-radio name="bathroom" label="1+"></app-radio>
+                                    <app-radio name="bathroom" label="2+"></app-radio>
+                                    <app-radio name="bathroom" label="3+"></app-radio>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -16,6 +46,53 @@
             </div>
 
             <div class="col-lg-8">
+                <div class="breadcrumb_container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <ul class="breadcrumb-list">
+                                <li>
+                                    <a href="javascript:void(0)">Home</a>
+                                </li>
+                                <li class="current">
+                                    <a href="javascript:void(0)">Rajouri</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-row align-items-center">
+                                <div class="col-4 text-right">
+                                    <span class="fz14">Sort By:</span>
+                                </div>
+                                <div class="col-8">
+                                    <div class="sort-container position-relative w-100">
+                                        <div class="position-relative w-100 d-block">
+                                            <input id="sort-btn" type="text" value="PM Ranking" class="sort-input" readonly>
+                                            <i class="fa fa-caret-down"></i>
+                                        </div>
+                                        <ul class="sort-dropdown">
+                                            <li>
+                                                <a href="javascript:void(0)">PM Ranking</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Posted On (Newest First)</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Posted On (Oldest First)</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Price(Low to High)</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Price(High to Low)</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                </div>
                 <div class="list-wrapper">
                     <div *ngFor="let node of list" class="item-card">
                         <div class="item-header">
