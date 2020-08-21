@@ -1,4 +1,30 @@
-<div class="w-100 mt-5">
+<div class="w-100 searchbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-md-10">
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Search upto 3 localities or landmarks" class="search-box">
+                            <button [routerLink]="['/property-listing']" type="button" class="search-btn btn btn-primary rounded-0">
+                                <i class="fa fa-search"></i>
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="javascript:void(0)" class="save-search-btn">Save Search</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 fz14 d-flex justify-content-end align-items-center">
+                <app-checkbox label="Include Nearby Properties"></app-checkbox>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w-100 list-page-wrapper">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-4 filter-column">
@@ -96,7 +122,7 @@
                 <div class="list-wrapper">
                     <div *ngFor="let node of list" class="item-card">
                         <div class="item-header">
-                            <a href="javascript:void(0)" class="item-title">
+                            <a [routerLink]="['/property-detail']" class="item-title">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit
                                 <i class="fa fa-external-link-alt fz14"></i>
                             </a>
@@ -303,9 +329,9 @@
                             <span>Nearby:</span>
                             <div class="ml-1 chip-row">
                                 <a href="javascript:void(0)">McDonald's</a>
-                                <a href="javascript:void(0)">Gild Cinemas</a>
+                                <a href="javascript:void(0)">Gold Cinemas</a>
                                 <a href="javascript:void(0)">Easy Day</a>
-                                <a href="javascript:void(0)">Gym</a>
+                                <a href="javascript:void(0)">Gold Gym</a>
                             </div>
                         </div>
                     </div>

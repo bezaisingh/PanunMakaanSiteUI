@@ -156,7 +156,7 @@
 
 .chip-row a {
     display: inline-block;
-    background-color: #d6f9cb;
+    background-color: rgba(89, 201, 165, 0.4);
     color: #616161;
     text-decoration: none;
     padding: 4px 8px;
@@ -164,7 +164,7 @@
 }
 
 .chip-row a:hover {
-    background-color: #afdfa1;
+    background-color: #59c9a5;
 }
 
 .chip-row a:not(:last-child) {
@@ -331,6 +331,7 @@
         line-height: 30px;
         font-size: 14px;
         color: #b1aeae;
+        cursor: pointer;
     }
 }
 
@@ -377,4 +378,72 @@
 .filter-title {
     font-size: .875rem;
     font-weight: 500;
+}
+
+.list-page-wrapper {
+    margin-top: 100px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1px;
+
+    .search-btn {
+        font-size: 14px;
+        padding: 0 15px;
+        min-width: 100px;
+        line-height: 40px;
+        height: 40px;
+    }
+
+    .search-box {
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: .875rem;
+        height: 40px;
+        padding: 15px 16px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .location-btn {
+        min-width: 175px;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--fade);
+        text-align: left;
+        padding: 0 15px;
+        position: relative;
+        font-size: .875rem;
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .location-btn::before {
+        content: '\f078';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: .75rem;
+    }
+}
+
+.searchbar {
+    background-color: #fafafa;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 64px;
+    z-index: 10;
+    padding: 5px 0;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.save-search-btn {
+    text-decoration: underline;
+    font-size: .875rem;
 }

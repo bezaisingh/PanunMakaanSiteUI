@@ -1,5 +1,6 @@
 $theme-colors: (
   "primary": #EF6F6C,
+  "secondary": #59c9a5,
   "footer": #1d3557,
   "fade": #949191
 );
@@ -36,4 +37,16 @@ body {
 .form-control:focus {
   box-shadow: none;
   border-color: #555;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  transition: all 0.2s ease-in-out;
+  z-index: 123456;
 }

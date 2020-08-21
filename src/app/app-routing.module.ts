@@ -14,6 +14,14 @@ const routes: Routes = [
   {
     path: 'property-listing',
     loadChildren: () => import('./property-listing/property-listing.module').then( m => m.PropertyListingModule )
+  },
+  {
+    path: 'property-detail',
+    loadChildren: () => import('./property-detail/property-detail.module').then( m => m.PropertyDetailModule )
+  },
+  {
+    path: '**',
+    redirectTo: '',
   }
 ];
 

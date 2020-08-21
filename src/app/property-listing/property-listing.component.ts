@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2, ElementRef } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef, HostListener } from '@angular/core';
 import { Options } from 'ng5-slider';
 
 @Component({
@@ -43,14 +43,12 @@ export class PropertyListingComponent implements OnInit {
         this._renderer.removeClass(parent, "open-drop");
       } else {
         this._renderer.addClass(parent, "open-drop");
-        this._renderer.setStyle(document.querySelector('body'), 'pointer-events', 'none');
       }
     });
 
     this._renderer.listen(document, "click", (event) => {
       if (event.target != element) {
         this._renderer.removeClass(parent, "open-drop");
-        this._renderer.setStyle(document.querySelector('body'), 'pointer-events', 'auto');
       }
     });
   }
