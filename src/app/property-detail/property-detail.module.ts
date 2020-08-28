@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { PropertyDetailComponent } from './property-detail.component';
 import { Routes, RouterModule } from '@angular/router';
 
+import { GalleryModule } from  'ng-gallery';
+import { LightboxModule } from  'ng-gallery/lightbox';
+
 const routes: Routes = [
   {
     path: '',
@@ -14,7 +17,9 @@ const routes: Routes = [
   declarations: [PropertyDetailComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    GalleryModule,
+    LightboxModule
   ]
 })
 export class PropertyDetailModule { }

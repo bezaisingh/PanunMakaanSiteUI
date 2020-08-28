@@ -6,6 +6,7 @@ $theme-colors: (
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import '~@angular/cdk/overlay-prebuilt.css';
 
 html,
 body {
@@ -23,6 +24,10 @@ body {
 
 .fz14 {
   font-size: 0.875rem;
+}
+
+.fz18 {
+  font-size: 1.125rem;
 }
 
 .fw5 {
@@ -49,4 +54,62 @@ body {
   background-color: rgba(0, 0, 0, .6);
   transition: all 0.2s ease-in-out;
   z-index: 123456;
+}
+
+.cdk-overlay-container {
+  z-index: 100000;
+}
+
+.btn-icon {
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  color: #ccc;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.property-breadcrumb {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+      font-size: 14px;
+
+      a {
+        color: #988f8f;
+      }
+    }
+
+    li:not(:last-child)::after {
+      content: '/';
+      display: inline-block;
+      margin: 0 8px;
+      color: #988f8f;
+    }
+
+    li:not(:last-child) a:hover {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    li:last-child a {
+      pointer-events: none;
+      cursor: text;
+    }
+  }
 }

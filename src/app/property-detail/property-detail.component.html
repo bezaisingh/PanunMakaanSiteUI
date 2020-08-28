@@ -39,10 +39,43 @@
             </div>
         </div>
 
-        <div class="property-overview card-skin mb-4">
+        <div class="property-breadcrumb card-skin mb-4">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-md-8">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Home</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Kashmir</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Gulmarg</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-right">
+                    <button class="btn btn-icon" title="Previous Property">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-icon ml-3" title="Next Property">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
+        <div class="property-overview card-skin mb-4">
+            <div class="row mb-4">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="gallery-grid">
+                        <div class="grid-item"
+                          *ngFor="let item of items | slice:0:3; index as i"
+                          [lightbox]="i"
+                          [gallery]="galleryId">
+                          <img [src]="item.data.thumb">
+                        </div>
+                      </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="outer-table fz14 mb-3">
@@ -222,15 +255,15 @@
 
         <div class="w-100 mb-4">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="property-stats card-skin fz14">
                         <div class="state">
                             <div class="form-row">
                                 <div class="col">
     
                                 </div>
-                                <div class="col-6 secondary-text">Age of the Building</div>
-                                <div class="col-4 fw5">>10 years old</div>
+                                <div class="col-5 secondary-text">Age of the Property</div>
+                                <div class="col-5 fw5">10 years</div>
                             </div>
                         </div>
                         <div class="state">
@@ -238,8 +271,8 @@
                                 <div class="col">
     
                                 </div>
-                                <div class="col-6 secondary-text">Ownership Type</div>
-                                <div class="col-4 fw5">Self Owned</div>
+                                <div class="col-5 secondary-text">Furnishing</div>
+                                <div class="col-5 fw5">Semi Furnished</div>
                             </div>
                         </div>
                         <div class="state">
@@ -247,8 +280,8 @@
                                 <div class="col">
     
                                 </div>
-                                <div class="col-6 secondary-text">Maintenance Charges</div>
-                                <div class="col-4 fw5">3.0 per sq.ft/m</div>
+                                <div class="col-5 secondary-text">Kitchen Type</div>
+                                <div class="col-5 fw5">Modular</div>
                             </div>
                         </div>
                         <div class="state">
@@ -256,21 +289,21 @@
                                 <div class="col">
     
                                 </div>
-                                <div class="col-6 secondary-text">Flooring</div>
-                                <div class="col-4 fw5">Vitrified Tiles</div>
+                                <div class="col-5 secondary-text">Possesion Date</div>
+                                <div class="col-5 fw5">28-08-2020</div>
                             </div>
                         </div>
                     </div> 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="property-stats card-skin fz14">
                         <div class="state">
                             <div class="form-row">
                                 <div class="col">
     
                                 </div>
-                                <div class="col-5 secondary-text">Builtup Area</div>
-                                <div class="col-5 fw5">1,360 sq.ft  </div>
+                                <div class="col-5 secondary-text">Land Size</div>
+                                <div class="col-5 fw5">1 Kanal</div>
                             </div>
                         </div>
                         <div class="state">
@@ -278,8 +311,8 @@
                                 <div class="col">
     
                                 </div>
-                                <div class="col-5 secondary-text">Furnishing Status</div>
-                                <div class="col-5 fw5">Full</div>
+                                <div class="col-5 secondary-text">Floors</div>
+                                <div class="col-5 fw5">G + 2</div>
                             </div>
                         </div>
                         <div class="state">
@@ -287,57 +320,8 @@
                                 <div class="col">
     
                                 </div>
-                                <div class="col-5 secondary-text">Facing</div>
-                                <div class="col-5 fw5">East</div>
-                            </div>
-                        </div>
-                        <div class="state">
-                            <div class="form-row">
-                                <div class="col">
-    
-                                </div>
-                                <div class="col-5 secondary-text">Floor</div>
-                                <div class="col-5 fw5">Floor 4 / 18</div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <div class="col-lg-4">
-                    <div class="property-stats card-skin fz14">
-                        <div class="state">
-                            <div class="form-row">
-                                <div class="col">
-    
-                                </div>
-                                <div class="col-5 secondary-text">Flats in Building</div>
-                                <div class="col-5 fw5">>110</div>
-                            </div>
-                        </div>
-                        <div class="state">
-                            <div class="form-row">
-                                <div class="col">
-    
-                                </div>
-                                <div class="col-5 secondary-text">Parking Available</div>
-                                <div class="col-5 fw5">Bike and Car</div>
-                            </div>
-                        </div>
-                        <div class="state">
-                            <div class="form-row">
-                                <div class="col">
-    
-                                </div>
-                                <div class="col-5 secondary-text">Power backup</div>
-                                <div class="col-5 fw5">Partial</div>
-                            </div>
-                        </div>
-                        <div class="state">
-                            <div class="form-row">
-                                <div class="col">
-    
-                                </div>
-                                <div class="col-5 secondary-text">Water Supply</div>
-                                <div class="col-5 fw5">Both</div>
+                                <div class="col-5 secondary-text">Parking</div>
+                                <div class="col-5 fw5">No</div>
                             </div>
                         </div>
                     </div> 
@@ -360,7 +344,7 @@
                 <div class="col-lg-6">
                     <div class="border-card">
                         <div class="border-card-header">
-                            <span>Amenities</span>
+                            <span>Nearby Facilities</span>
                         </div>
                         <div class="border-card-body fz12">
                             <div class="row">
@@ -368,19 +352,9 @@
                                     <div class="amenities-container">
                                         <div class="row align-items-center">
                                             <div class="col-4 text-center">
-                                                <img src="assets/icons/colors/gym.png" alt="">
+                                                <img src="assets/icons/colors/home.png" alt="">
                                             </div>
-                                            <div class="col-8">GYM</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="amenities-container">
-                                        <div class="row align-items-center">
-                                            <div class="col-4 text-center">
-                                                <img src="assets/icons/shield.png" alt="">
-                                            </div>
-                                            <div class="col-8">CLUB HOUSE</div>
+                                            <div class="col-8">HOSPITAL</div>
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +364,7 @@
                                             <div class="col-4 text-center">
                                                 <img src="assets/icons/colors/swimmer.png" alt="">
                                             </div>
-                                            <div class="col-8">SWIMMING POOL</div>
+                                            <div class="col-8">SCHOOL</div>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +374,7 @@
                                             <div class="col-4 text-center">
                                                 <img src="assets/icons/colors/lift.png" alt="">
                                             </div>
-                                            <div class="col-8">LIFT</div>
+                                            <div class="col-8">COLLEGE / UNIVERSITY</div>
                                         </div>
                                     </div>
                                 </div>
@@ -408,39 +382,9 @@
                                     <div class="amenities-container">
                                         <div class="row align-items-center">
                                             <div class="col-4 text-center">
-                                                <img src="assets/icons/shield.png" alt="">
+                                                <img src="assets/icons/colors/gym.png" alt="">
                                             </div>
-                                            <div class="col-8">SECURITY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="amenities-container">
-                                        <div class="row align-items-center">
-                                            <div class="col-4 text-center">
-                                                <img src="assets/icons/shield.png" alt="">
-                                            </div>
-                                            <div class="col-8">INTERCOM</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="amenities-container">
-                                        <div class="row align-items-center">
-                                            <div class="col-4 text-center">
-                                                <img src="assets/icons/colors/swing.png" alt="">
-                                            </div>
-                                            <div class="col-8">CHILDREN PLAY AREA</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="amenities-container">
-                                        <div class="row align-items-center">
-                                            <div class="col-4 text-center">
-                                                <img src="assets/icons/colors/market.png" alt="">
-                                            </div>
-                                            <div class="col-8">SHOPPING CENTER</div>
+                                            <div class="col-8">GYM</div>
                                         </div>
                                     </div>
                                 </div>
@@ -458,9 +402,39 @@
                                     <div class="amenities-container">
                                         <div class="row align-items-center">
                                             <div class="col-4 text-center">
-                                                <img src="assets/icons/shield.png" alt="">
+                                                <img src="assets/icons/colors/pollution.png" alt="">
                                             </div>
-                                            <div class="col-8">SEWAGE TREATMENT PLANT</div>
+                                            <div class="col-8">ATM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="amenities-container">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <img src="assets/icons/colors/web-site.png" alt="">
+                                            </div>
+                                            <div class="col-8">PHARMACY</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="amenities-container">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <img src="assets/icons/colors/swing.png" alt="">
+                                            </div>
+                                            <div class="col-8">PLAYGROUND</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="amenities-container">
+                                        <div class="row align-items-center">
+                                            <div class="col-4 text-center">
+                                                <img src="assets/icons/colors/market.png" alt="">
+                                            </div>
+                                            <div class="col-8">SHOPPING CENTER</div>
                                         </div>
                                     </div>
                                 </div>
@@ -470,17 +444,7 @@
                                             <div class="col-4 text-center">
                                                 <img src="assets/icons/colors/parking.png" alt="">
                                             </div>
-                                            <div class="col-8">VISITOR PARKING</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="amenities-container">
-                                        <div class="row align-items-center">
-                                            <div class="col-4 text-center">
-                                                <img src="assets/icons/colors/antenna.png" alt="">
-                                            </div>
-                                            <div class="col-8">INTERNET PROVIDER</div>
+                                            <div class="col-8">Mosque</div>
                                         </div>
                                     </div>
                                 </div>

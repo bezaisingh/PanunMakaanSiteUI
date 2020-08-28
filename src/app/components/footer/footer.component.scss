@@ -1,0 +1,64 @@
+footer {
+    margin-top: 48px;
+}
+
+.footer-main {
+    background-color: #0c1725;
+    padding: 32px 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-bottom {
+    background-color: #050c15;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list-links {
+    a {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    a:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.social-links {
+    a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url('/assets/icons/sprite-social.png');
+        background-repeat: no-repeat;
+        margin-right: 16px;
+    }
+
+    a.facebook {
+        background-position: -20px -20px;
+    }
+
+    a.twitter {
+        background-position: -20px -160px;
+    }
+
+    a.instagram {
+        background-position: -20px -377px;
+    }
+}
+
+.app-icon {
+    display: inline-block;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+
+    img {
+        width: 100px;
+    }
+}

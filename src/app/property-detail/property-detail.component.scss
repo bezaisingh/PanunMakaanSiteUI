@@ -171,3 +171,39 @@
     }
 
 }
+
+.gallery-grid {
+    display: grid;
+    gap: 10px;
+    grid-template: 1fr 1fr;
+}
+
+.gallery-grid .grid-item:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery-grid .grid-item:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gallery-grid .grid-item:nth-child(3) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.gallery-grid .grid-item {
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.amenities-container {
+    text-transform: uppercase;
+}
