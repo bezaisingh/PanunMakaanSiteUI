@@ -207,3 +207,7 @@
 .amenities-container {
     text-transform: uppercase;
 }
+
+.not_available {
+    filter: opacity(0.8) grayscale(100%);
+}

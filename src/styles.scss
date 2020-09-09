@@ -108,8 +108,8 @@ body {
     }
 
     li:last-child a {
-      pointer-events: none;
       cursor: text;
+      text-decoration: none;
     }
   }
 }

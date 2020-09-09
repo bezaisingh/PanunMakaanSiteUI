@@ -216,6 +216,9 @@
     width: 100%;
     visibility: hidden;
     opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
 
     li {
         display: block;
@@ -233,4 +236,10 @@
     li a:hover {
         background-color: rgb(250, 250, 250);
     }
+}
+
+.drop.open .child-filter-option {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
 }

@@ -5,15 +5,13 @@
                 <div class="row align-items-center">
                     <div class="col-md-10">
                         <div class="search-wrapper">
-                            <input type="text" placeholder="Search upto 3 localities or landmarks" class="search-box">
-                            <button [routerLink]="['/property-listing']" type="button" class="search-btn btn btn-primary rounded-0">
+                            <input type="text" placeholder="Search upto 3 localities" class="search-box">
+                            <button [routerLink]="['/property-listing']" type="button"
+                                class="search-btn btn btn-primary rounded-0">
                                 <i class="fa fa-search"></i>
                                 Search
                             </button>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="javascript:void(0)" class="save-search-btn">Save Search</a>
                     </div>
                 </div>
             </div>
@@ -45,24 +43,27 @@
                             <div class="filter-panel mb-3">
                                 <span class="filter-title">Price Range:</span>
                                 <div>
-                                    <ng5-slider [(value)]="priceRange.minValue" [(highValue)]="priceRange.maxValue" [options]="options"></ng5-slider>
+                                    <ng5-slider [(value)]="priceRange.minValue" [(highValue)]="priceRange.maxValue"
+                                        [options]="options"></ng5-slider>
                                 </div>
                                 <div class="form-row">
                                     <div class="col d-flex align-items-center">
                                         <span class="rupee-sign">₹</span>
-                                        <input name="minValue" [(ngModel)]="priceRange.minValue" type="number" class="range-input">
+                                        <input name="minValue" [(ngModel)]="priceRange.minValue" type="number"
+                                            class="range-input">
                                     </div>
                                     <div class="col d-flex align-items-center">
                                         <span class="rupee-sign">₹</span>
-                                        <input name="maxValue" [(ngModel)]="priceRange.maxValue" type="number" class="range-input">
+                                        <input name="maxValue" [(ngModel)]="priceRange.maxValue" type="number"
+                                            class="range-input">
                                     </div>
                                 </div>
                             </div>
                             <div class="filter-panel">
                                 <span class="filter-title">Bathrooms:</span>
                                 <div class="fz14 mt-2">
-                                    <app-radio name="bathroom" label="1+"></app-radio>
-                                    <app-radio name="bathroom" label="2+"></app-radio>
+                                    <app-radio name="bathroom" label="1"></app-radio>
+                                    <app-radio name="bathroom" label="2"></app-radio>
                                     <app-radio name="bathroom" label="3+"></app-radio>
                                 </div>
                             </div>
@@ -92,23 +93,21 @@
                                 <div class="col-8">
                                     <div class="sort-container position-relative w-100">
                                         <div class="position-relative w-100 d-block">
-                                            <input id="sort-btn" type="text" value="PM Ranking" class="sort-input" readonly>
+                                            <input id="sort-btn" type="text" value="Posted On (Newest First)"
+                                                class="sort-input" readonly>
                                             <i class="fa fa-caret-down"></i>
                                         </div>
                                         <ul class="sort-dropdown">
-                                            <li>
-                                                <a href="javascript:void(0)">PM Ranking</a>
-                                            </li>
-                                            <li>
+                                            <li role="option">
                                                 <a href="javascript:void(0)">Posted On (Newest First)</a>
                                             </li>
-                                            <li>
+                                            <li role="option">
                                                 <a href="javascript:void(0)">Posted On (Oldest First)</a>
                                             </li>
-                                            <li>
+                                            <li role="option">
                                                 <a href="javascript:void(0)">Price(Low to High)</a>
                                             </li>
-                                            <li>
+                                            <li role="option">
                                                 <a href="javascript:void(0)">Price(High to Low)</a>
                                             </li>
                                         </ul>
@@ -117,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="mb-0 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                    <p class="mb-0 mt-3">458, House for sale in Srinagar</p>
                 </div>
                 <div class="list-wrapper">
                     <div *ngFor="let node of list" class="item-card">
@@ -140,23 +139,23 @@
                         </div>
                         <div class="item-overview">
                             <div class="row item-overview-row align-items-center">
-                                <div class="col-1 overview">
+                                <!-- <div class="col-1 overview">
                                     <div class="status-overview">
                                         <i class="fa fa-check-circle"></i>
                                     </div>
                                     <div class="status-overview">
                                         <i class="fa fa-rupee-sign"></i>
                                     </div>
-                                </div>
-                                <div class="col-3 overview">
+                                </div> -->
+                                <div class="col-6 overview">
                                     <h3>1 Kanal</h3>
-                                    <h5>Builtup</h5>
+                                    <h5>Land Size</h5>
                                 </div>
-                                <div class="col-4 overview">
+                                <!-- <div class="col-4 overview">
                                     <h3><i class="fa fa-rupee-sign"></i> 1.33 Lacs/Month</h3>
                                     <h5>Estimated EMI</h5>
-                                </div>
-                                <div class="col-4 overview">
+                                </div> -->
+                                <div class="col-6 overview">
                                     <h3><i class="fa fa-rupee-sign"></i> 1.60 CR</h3>
                                     <h5>Negotiable</h5>
                                     <!-- <h5><i class="fa fa-rupee-sign"></i> 19,576 per sq. ft.</h5> -->
@@ -166,7 +165,8 @@
                         <div class="item-details">
                             <div class="row">
                                 <div class="col-md-5 col-12">
-                                    <img src="https://cdn.pixabay.com/photo/2017/07/17/00/54/house-2511060__340.jpg" alt="" class="w-100">
+                                    <img src="https://cdn.pixabay.com/photo/2017/07/17/00/54/house-2511060__340.jpg"
+                                        alt="" class="w-100">
                                 </div>
                                 <div class="col-md-7 col-12">
                                     <div class="outer-table fz14 mb-3">
@@ -279,7 +279,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6">
-                                            <button class="btn btn-primary fz14 btn-block">Get Seller Details</button>
+                                            <button class="btn btn-primary fz14 btn-block">Get Owner Details</button>
                                         </div>
                                         <div class="col-6">
                                             <button class="btn btn-outline-primary action_btn">
@@ -289,36 +289,16 @@
                                                     xml:space="preserve">
                                                     <g>
                                                         <path d="M343.611,22.543c-22.613,0-44.227,5.184-64.238,15.409c-13.622,6.959-26.136,16.205-36.873,27.175
-            c-10.738-10.97-23.251-20.216-36.873-27.175c-20.012-10.225-41.625-15.409-64.239-15.409C63.427,22.543,0,85.97,0,163.932
-            c0,55.219,29.163,113.866,86.678,174.314c48.022,50.471,106.816,92.543,147.681,118.95l8.141,5.261l8.141-5.261
-            c40.865-26.406,99.659-68.479,147.682-118.95C455.838,277.798,485,219.151,485,163.932C485,85.97,421.573,22.543,343.611,22.543z
-            M376.589,317.566c-42.918,45.106-95.196,83.452-134.089,109.116c-38.893-25.665-91.171-64.01-134.088-109.116
-            C56.381,262.884,30,211.194,30,163.932c0-61.42,49.969-111.389,111.389-111.389c35.361,0,67.844,16.243,89.118,44.563
-            l11.993,15.965l11.993-15.965c21.274-28.32,53.757-44.563,89.118-44.563c61.42,0,111.389,49.969,111.389,111.389
-            C455,211.194,428.618,262.884,376.589,317.566z" />
+                                                        c-10.738-10.97-23.251-20.216-36.873-27.175c-20.012-10.225-41.625-15.409-64.239-15.409C63.427,22.543,0,85.97,0,163.932
+                                                        c0,55.219,29.163,113.866,86.678,174.314c48.022,50.471,106.816,92.543,147.681,118.95l8.141,5.261l8.141-5.261
+                                                        c40.865-26.406,99.659-68.479,147.682-118.95C455.838,277.798,485,219.151,485,163.932C485,85.97,421.573,22.543,343.611,22.543z
+                                                        M376.589,317.566c-42.918,45.106-95.196,83.452-134.089,109.116c-38.893-25.665-91.171-64.01-134.088-109.116
+                                                        C56.381,262.884,30,211.194,30,163.932c0-61.42,49.969-111.389,111.389-111.389c35.361,0,67.844,16.243,89.118,44.563
+                                                        l11.993,15.965l11.993-15.965c21.274-28.32,53.757-44.563,89.118-44.563c61.42,0,111.389,49.969,111.389,111.389
+                                                        C455,211.194,428.618,262.884,376.589,317.566z" />
                                                     </g>
                                                 </svg>
-
-                                            </button>
-                                            <button class="btn btn-outline-primary action_btn">
-                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                                    xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <path d="M424.385,20.69C401.182,6.768,376.445,0,348.761,0c-33.122,0-65.635,9.753-97.077,19.185
-                c-30.716,9.214-59.729,17.917-88.446,17.919c-0.004,0-0.007,0-0.011,0c-19.199,0-36.583-4.064-52.894-12.382V15
-                c0-8.284-6.716-15-15-15s-15,6.716-15,15v18.551v203.896V497c0,8.284,6.716,15,15,15s15-6.716,15-15V261.453
-                c16.567,6.4,34.052,9.547,52.906,9.547c33.121,0,65.631-9.753,97.071-19.185c30.718-9.215,59.733-17.919,88.451-17.919
-                c22.092,0,41.779,5.369,60.188,16.415c4.633,2.78,10.404,2.854,15.108,0.191c4.703-2.663,7.609-7.649,7.609-13.053V33.552
-                C431.667,28.283,428.903,23.4,424.385,20.69z M251.691,223.081C220.972,232.296,191.957,241,163.24,241
-                c-19.206,0-36.594-4.058-52.906-12.376V57.566c16.564,6.399,34.046,9.539,52.894,9.538c0.003,0,0.01,0,0.014,0
-                c33.118-0.002,65.626-9.754,97.063-19.185C291.024,38.704,320.042,30,348.761,30c19.206,0,36.594,4.058,52.905,12.375v171.06
-                c-16.566-6.4-34.052-9.539-52.905-9.539C315.641,203.896,283.13,213.649,251.691,223.081z" />
-                                                        </g>
-                                                    </g>
-                                                </svg>
+                                                <span class="text-dark ml-2">Add to Shortlist</span>
                                             </button>
                                         </div>
                                     </div>
@@ -326,7 +306,7 @@
                             </div>
                         </div>
 
-                        <div class="item-footer fz12 d-flex align-items-center">
+                        <!-- <div class="item-footer fz12 d-flex align-items-center">
                             <span>Nearby:</span>
                             <div class="ml-1 chip-row">
                                 <a href="javascript:void(0)">McDonald's</a>
@@ -334,7 +314,7 @@
                                 <a href="javascript:void(0)">Easy Day</a>
                                 <a href="javascript:void(0)">Gold Gym</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
