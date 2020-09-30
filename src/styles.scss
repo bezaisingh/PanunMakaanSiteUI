@@ -34,6 +34,10 @@ body {
   font-weight: 500;
 }
 
+.heading-3 {
+  font-size: 24px;
+}
+
 .mx2px {
   margin-left: 2px;
   margin-right: 2px;
@@ -42,6 +46,15 @@ body {
 .form-control:focus {
   box-shadow: none;
   border-color: #555;
+}
+
+.custom-select:focus {
+  box-shadow: none;
+  border-color: #555;
+}
+
+.btn-min-width {
+  min-width: 100px;
 }
 
 .overlay {
@@ -112,4 +125,64 @@ body {
       text-decoration: none;
     }
   }
+}
+
+.tab-row {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+  background-color: rgb(250, 250, 250);
+  overflow: hidden;
+}
+
+.tab-row li a {
+  display: block;
+  color: #6b6a6a;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 8px;
+  border-bottom: 3px solid transparent;
+  min-width: 130px;
+}
+
+.tab-row li.active a {
+  background-color: #fff;
+  border-bottom: 3px solid var(--primary);
+  color: var(--primary);
+  border-radius: 4px 4px 0 0;
+}
+
+.form-card-skin {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+form.fz14 {
+  .form-control,
+  .custom-select {
+    font-size: 0.875rem;
+  }
+
+  .form-group > label {
+    font-weight: 500;
+    color: #555;
+  }
+}
+
+.form-section-header {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.type-wrapper .type-title {
+  font-size: 1.25rem;
 }
