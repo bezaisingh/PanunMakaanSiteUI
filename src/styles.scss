@@ -16,6 +16,7 @@ body {
 body {
   font-size: 16px;
   padding-top: 64px;
+  color: #464646;
 }
 
 .fz12 {
@@ -32,6 +33,14 @@ body {
 
 .fw5 {
   font-weight: 500;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.pb15 {
+  padding-bottom: 15px;
 }
 
 .heading-3 {
@@ -186,3 +195,34 @@ form.fz14 {
 .type-wrapper .type-title {
   font-size: 1.25rem;
 }
+
+.modal-backdrop {
+  z-index: 1040121;
+}
+
+.modal {
+  z-index: 1040129;
+}
+
+.login-modal {
+  width: 670px;
+  height: 500px;
+  max-width: 100%;
+}
+
+.login-modal .modal-content {
+  height: 100%;
+  border-radius: 0;
+}
+
+.login-modal .modal-content .content-footer {
+  position: absolute;
+  padding: 15px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.login-modal .modal-content .content-header {
+  padding: 15px;
+} 

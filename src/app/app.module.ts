@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +19,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LoginComponent]
 })
 export class AppModule { }

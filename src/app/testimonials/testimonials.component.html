@@ -1,0 +1,36 @@
+<div class="w-100">
+    <div class="banner-wrapper">
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-4 mb-3 page-heading">NoBroker Reviews - See What Our Valuable Customers Says</h1>
+        <owl-carousel-o [options]="customOptions">
+ 
+            <ng-container *ngFor="let node of testimonials">
+              <ng-template carouselSlide>
+                <div class="row">
+                    <div *ngFor="let child of node.count" class="col-lg-6 pt15">
+                        <div class="test-container border-bottom">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="" class="test-person-img">
+                                    <div class="fz14 text-center my-1 test-person-info">Review By: TIASHA</div>
+                                    <div class="fz14 text-center my-1 test-person-info">(TenantPayment)</div>
+                                </div>
+                                <div class="col-md-1">
+                                    <span class="icon icon-quote-left icon-2x" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="test-message">
+                                        The service was great and very professional. I went with the Relax plan. My RM Sayantan Gupta is really efficient. He noted my requirements quite well and suggested me a list of options. I shortlisted one from them and in just one visit, I was able to finalize the house of my choice. With a small baby to look after, and my husband staying out of town, I found the Relax plan as the best possible option and really worth the money. Thanks NoBroker!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </ng-template>
+            </ng-container>
+         
+        </owl-carousel-o>
+    </div>
+</div>

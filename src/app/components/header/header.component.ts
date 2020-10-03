@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { LoginComponent } from 'src/app/login/login.component';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  bsModalRef: BsModalRef;
 
-  constructor() { }
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit(): void {
+  }
+
+  openLoginModal(): void {
+    this.bsModalRef = this.modalService.show(LoginComponent, Object.assign({}, { class: 'login-modal' }));
+    this.bsModalRef.content.closeBtnName = 'Close';
   }
 
 }
